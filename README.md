@@ -21,7 +21,7 @@ This system requires **MFA** (ADP MFA / SMS / TOTP). The OSS version provides TO
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/adp-workforce-now-browser-automation.git
+git clone https://github.com/Browser-Automation-Hub/adp-workforce-now-browser-automation.git
 cd adp-workforce-now-browser-automation
 npm install
 cp .env.example .env
