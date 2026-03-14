@@ -253,6 +253,37 @@ await withAnchorBrowser(async (page) => {
 
 ---
 
+## Known Selectors Reference
+
+> These CSS selectors were observed in ADP Workforce Now web interfaces. Enterprise applications update their UIs — verify against your specific instance and submit PRs when selectors break.
+
+| Element | Selector | Notes |
+|---------|----------|-------|
+| Login: username | `#login-form_username` | Login form |
+| Login: password | `#login-form_password` | Login form |
+| Login: submit | `#login-form_submit` | Login form |
+| Login: mfa code | `#verificationCode` | Login form |
+| run payroll report: reports nav | `a[href*="reports"]` | |
+| run payroll report: report list | `.report-list-item` | |
+| run payroll report: generate btn | `.run-report-btn` | |
+| run payroll report: download c s v | `.download-csv` | |
+| export pay stubs: payroll nav | `a[href*="payroll"]` | |
+| export pay stubs: pay stub list | `.pay-stub-row` | |
+| export pay stubs: export btn | `.bulk-export-btn` | |
+| export pay stubs: date range | `#date-from` | |
+| update employee record: employee search | `#employee-search` | |
+| update employee record: employee row | `.employee-list-item` | |
+| update employee record: edit btn | `.edit-employee-btn` | |
+| update employee record: save btn | `#save-changes` | |
+| download tax forms: tax nav | `a[href*="tax"]` | |
+| download tax forms: year select | `#tax-year` | |
+| download tax forms: form type | `#form-type` | |
+| download tax forms: download btn | `.download-btn` | |
+
+> ⚠️ Selectors are best-effort. Run `node src/utils.js --verify-selectors` to test against your instance.
+
+---
+
 ## More Browser Automation Projects
 
 This is part of the **[Browser Automation Hub](https://github.com/Browser-Automation-Hub)** — a collection of open-source browser automation scaffolds for systems with poor or no API support:
