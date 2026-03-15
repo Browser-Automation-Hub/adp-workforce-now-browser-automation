@@ -1,7 +1,7 @@
 {
-  "name": "adp-workforce-now-browser-automation",
+  "name": "@browser-automation-hub/adp-workforce-now-browser-automation",
   "version": "1.0.0",
-  "description": "Browser automation for ADP Workforce Now — automate payroll processing, extract pay stubs, manage employee records, and run HR reports without the ADP API.",
+  "description": "Browser automation for ADP Workforce Now — automate payroll, extract pay stubs, and manage HR records",
   "main": "src/actions.js",
   "scripts": {
     "start": "node examples/basic-login.js",
@@ -16,7 +16,7 @@
     "browser-automation",
     "puppeteer",
     "playwright",
-    "anchorbrowser",
+    "anchor-browser",
     "nodejs"
   ],
   "license": "MIT",
@@ -35,5 +35,8 @@
   "homepage": "https://github.com/Browser-Automation-Hub/adp-workforce-now-browser-automation#readme",
   "bugs": {
     "url": "https://github.com/Browser-Automation-Hub/adp-workforce-now-browser-automation/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
